@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="/index.js"defer></script>
+  <script src="/index.js" defer></script>
+
+  
+  <title>Frontend Mentor | Insure landing page</title>
+</head>
+<body>
+
+  <header>
+    <nav class="container mx-auto lg:px-10 sm:px-0 p-6 flex justify-between items-center">
+      <div class="">
+        <img src="/images/logo.svg" alt="">
+      </div>
+      <div>
+        <ul class="hidden font-bold text-darkGrayishViolet text-sm lg:flex items-center space-x-5 tracking-widest">
+          <a href=""><li class="uppercase"><a href="" class="hover:cursor-pointer ease-in duration-200 hover:text-veryDarkViolet">HOW WE WORK</a></li></a>
+          <a href=""><li class="uppercase"><a href="" class="hover:cursor-pointer ease-in duration-200 hover:text-veryDarkViolet">BLOG</a></li></a>
+          <a href=""><li class="uppercase"><a href="" class="hover:cursor-pointer ease-in duration-200 hover:text-veryDarkViolet">ACCOUNT</a></li></a>
+          <li class="text-darkViolet font-bold uppercase px-9 py-2 border-2 border-darkViolet hover:bg-darkViolet hover:text-white ease-in duration-200"><a href="">VIEW PLANS</a></li>
+        </ul>
+      </div>
+
+      <!-- mobile nav -->
+      <div class="lg:hidden absolute inset-0 z-50">
+        <div class="flex items-center px-5 py-7 justify-between bg-white">
+          <div>
+            <img src="/images/logo.svg" alt="">
+          </div>
+          <div id="hamburger" class="lg:hidden cursor-pointer">
+            <i class="fa-solid fa-bars text-lg border-2 border-darkViolet p-2"></i>
+          </div>
+        </div>
+        <div id="menu" class="hidden h-[100vh] pt-10 bg-veryDarkViolet bg-[url(/images/bg-pattern-mobile-nav.svg)] bg-contain bg-no-repeat bg-bottom">
+          <ul class="grid text-center items-center space-y-10">
+            <li><a href="" id="hlink" class="uppercase font-bold text-white text-sm tracking-widest">HOW WE WORK</a></li>
+            <li><a href="" id="hlink" class="uppercase font-bold text-white text-sm tracking-widest">BLOG</a></li>
+            <li><a href="" id="hlink" class="uppercase font-bold text-white text-sm tracking-widest">ACCOUNT</a></li>
+            <li><a href="" id="hlink" class="text-white font-bold uppercase px-24 py-3 border-2 border-white">VIEW PLANS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="lg:pb-12">
+
+      <div class="relative">
+        <img src="/images/bg-pattern-intro-right-desktop.svg" alt="" class="absolute hidden lg:block lg:z-50 right-0">
+        <img src="/images/bg-pattern-intro-left-desktop.svg" alt="" class="absolute hidden lg:block lg:z-50 top-[25rem]">
+        <div class="lg:absolute lg:z-50 right-48 top-48">
+          <img src="/images/image-intro-mobile.jpg" alt="" class="w-full lg:w-[35rem]">
+        </div>
+        <div class="relative py-20 space-y-10 bg-darkViolet">
+          <img src="/images/bg-pattern-intro-left-mobile.svg" alt="" class="absolute left-0 top-0 lg:hidden">
+          <div class="space-y-10 px-3 lg:container lg:mx-auto text-center lg:text-left">
+            <div class="w-32 relative -left-[40rem] container mx-auto lg:px-10  border-2 border-b border-darkGrayishViolet mb-10"></div>
+            <h1 class="font-DM text-5xl lg:text-7xl text-white">Humanizing <br> your insurance.</h1>
+            <p class=" text-white lg:text-xl">Get your life insurance coverage easier and faster. We blend our expertise
+              and<br> technology to help you find the plan that’s right for you. Ensure you 
+              and your loved ones are protected.
+            </p>
+            <p>
+              <a href="" class="text-sm ease-in duration-200 text-white font-semibold uppercase px-12 py-3 border-2 border-white hover:bg-white hover:text-veryDarkViolet">VIEW PLANS</a></div>
+            </p>
+          </div>
+          <div class="relative">
+            <img src="/images/bg-pattern-intro-right-mobile.svg" alt="" class="absolute right-0 -top-36 lg:hidden">
+          </div>
+      </div>
+    </section>
+
+    <section id="we-different" class="pt-[15rem] container mx-auto lg:px-10">
+      <div class="text-center space-y-24">
+
+        <div class="w-32 relative -left-[39rem] container mx-auto lg:px-10  border-2 border-b border-darkGrayishViolet mb-10"></div>
+
+          <h1 class="font-DM text-5xl lg:text-7xl lg:text-left">We're different</h1>
+
+          <!-- point 1 -->
+          <ul class="flex flex-col lg:grid lg:grid-cols-3 gap-20">
+            <li class="flex flex-col items-center lg:items-start gap-10">
+              <img src="/images/icon-snappy-process.svg" alt="" class="w-24">
+              <h2 class="font-DM text-3xl lg:text-left">Snappy Process</h2>
+              <p class="lg:text-left text-darkGrayishViolet">Our application process can be completed in minutes, not hours. Don’t get 
+                stuck filling in tedious forms.
+              </p>
+            </li>
+
+            <!-- point 2 -->
+            <li class="flex flex-col items-center lg:items-start gap-10">
+              <img src="/images/icon-affordable-prices.svg" alt="" class="w-24">
+              <h2 class="font-DM text-3xl lg:text-left">Affordable Prices</h2>
+              <p class="lg:text-left text-darkGrayishViolet">We don’t want you worrying about high monthly costs. Our prices may be low, 
+                but we still offer the best coverage possible.
+              </p>
+            </li>
+
+            <!-- point 3 -->
+            <li class="flex flex-col items-center lg:items-start gap-10">
+              <img src="/images/icon-people-first.svg" alt="" class="w-24">
+              <h2 class="font-DM text-3xl lg:text-left">People First</h2>
+              <p class="lg:text-left text-darkGrayishViolet">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+                sure you’re covered when you need it.
+              </p>
+            </li>
+          </ul>
+      </div>
+
+      <div class="container relative mx-auto bg-darkViolet py-20 my-[10rem] text-white text-center space-y-10  lg:flex lg:items-center lg:justify-around lg:bg-[url(/images/bg-pattern-intro-right-desktop.svg)] lg:bg-no-repeat lg:bg-right sm:bg-[url(/images/bg-pattern-intro-right-mobile.svg)] sm:bg-no-repeat sm:bg-right">
+
+        <div>
+          <h2 class="font-DM text-5xl lg:text-left lg:text-6xl">Find out more <br> about how we work</h2>
+        </div>
+        <div>
+          <a href="" class="text-sm text-white font-semibold uppercase px-12 py-3 border-2 border-white hover:bg-white hover:text-veryDarkViolet">HOW WE WORK</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-veryLightGray py-20">
+    <div class="lg:container lg:mx-auto lg:px-10 flex flex-col lg:flex-row lg:justify-between items-center gap-10 mb-10">
+      <div>
+        <img src="/images/logo.svg" alt="">
+      </div>
+      <div class="space-x-5">
+        <a href=""><i class="fa-brands fa-square-facebook text-darkGrayishViolet text-3xl hover:text-veryDarkViolet hover:cursor-pointer ease-in duration-200"></i></a>
+        <a href=""><i class="fa-brands fa-twitter text-darkGrayishViolet text-3xl hover:text-veryDarkViolet hover:cursor-pointer ease-in duration-200"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest text-darkGrayishViolet text-3xl hover:text-veryDarkViolet hover:cursor-pointer"></i></a>
+        <a href=""><i class="fa-brands fa-instagram text-darkGrayishViolet text-3xl hover:text-veryDarkViolet hover:cursor-pointer ease-in duration-200"></i></a>
+      </div>
+    </div>
+
+    
+    <div class="lg:container lg:mx-auto lg:px-10">
+      <div class="container mx-auto lg:px-10  border-2 border-b border-gray-200 mb-10"></div>
+      <ul class="text-center lg:text-left text-sm lg:grid lg:grid-cols-4">
+        <li class="mb-10">
+          <h3 class="font-bold text-darkGrayishViolet mb-10">OUR COMPANY</h3>
+          <ul class="space-y-2">
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">HOW WE WORK</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">WHY INSURE?</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">CHECK PRICE</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">REVIEWS</a></li>
+          </ul>
+        </li>
+
+        <li class="mb-10">
+          <h3 class="font-bold text-darkGrayishViolet mb-10">HELP ME</h3>
+          <ul class="space-y-2">
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">FAQ</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">TERMS OF USE</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">PRIVACY POLICY</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">COOKIES</a></li>
+          </ul>
+        </li>
+
+        <li class="mb-10">
+          <h3 class="font-bold text-darkGrayishViolet mb-10">CONTACT</h3>
+          <ul class="space-y-2">
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">SALES</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">SUPPORT</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">LIVE CHAT</a></li>
+          </ul>
+        </li>
+
+        <li class="mb-10">
+          <h3 class="font-bold text-darkGrayishViolet mb-10">OTHERS</h3>
+          <ul class="space-y-2">
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">CAREERS</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">PRESS</a></li>
+            <li><a href="" class="font-bold text-veryDarkViolet hover:underline ease-in duration-200">LICENCES</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
